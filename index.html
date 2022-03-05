@@ -1,0 +1,147 @@
+<!--
+    Bootcamp HTML Web Developer - DIO
+    Projeto: Recriando a interface do Netflix
+    Data: 04/03/2022
+    Autor: Cleuber José Silva
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsivo.css">
+    <link rel="stylesheet" type="text/css" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl/owl.theme.default.min.css">
+    <title>NETFIT</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFIT</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">DESAFIO FIT</h3>
+                <p class="descricao">Apresentada pela personal trainer Maria Aparecida a série Desafio Fit apresenta uma sequência de desafios a serem cumpridos por quem está buscando resultados eficientes em hipertrofia.</p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+        
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <h1>Séries</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/filme07 - desafiofit - cathy-pham-3jAN9InapQI-unsplash.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/serie01 - dose-juice-sTPy-oeA3h0-unsplash.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/serie02 - jared-rice-NTyBbu66_SI-unsplash.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/serie03 - edgar-castrejon-1CsaVdwfIew-unsplash.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <div class="carrosel-filmes">
+        <h1>Filmes</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/filme05 - spencer-davis-0ShTs8iPY28-unsplash.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/filme06 - edgar-chaparro-sHfo3WOgGTU-unsplash.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/filme02 - jesper-aggergaard-j6cMbjtCgvE-unsplash.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/filme01 - charles-gaudreault-xXofYCc3hqc-unsplash.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/filme03 - morgan-petroski-rx6wXNsXUOE-unsplash.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/filme04 - ricardo-henri-UDOpbhxNNU4-unsplash.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <div class="carrosel-filmes">
+        <h1>Documentários</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/doc01 - nathan-dumlao-x7Lyx8Yyvug-unsplash.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/doc02 - alexander-mils-nG4ZimMIO_k-unsplash.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/doc03 - adam-niescioruk-ROQz4eE2kzs-unsplash.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" onclick="modal_on()" src="img/doc04 - paul-green-gOHfFgwyDNM-unsplash.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>NETFIT - Todos os direitos reservados 2022</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="modalon">
+        <div id="displaymodal">
+            <div id="btnfechamodal">
+                <h1 id="nomefilme">NOME DO FILME</h1>
+                <button role="button" class="botao" onclick="modal_off()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <p id="descricaofilme">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nibh imperdiet, cursus arcu quis, vulputate est. In sed tristique orci. Duis sapien nunc, aliquet eu erat in, dignissim lacinia odio. Duis in lectus quam. Quisque varius risus vitae magna tempor suscipit. Duis quis diam a sapien aliquam interdum id in lacus.</p>
+            <div>
+                <button role="button" class="botao">
+                    <i class="fa-solid fa-play"></i>
+                    ASSISTIR AGORA
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+
+    <script src="https://kit.fontawesome.com/2e1edbcfa9.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="js/modal.js"></script>
+
+</body>
+</html>
